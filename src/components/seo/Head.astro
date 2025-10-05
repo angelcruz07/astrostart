@@ -1,0 +1,19 @@
+---
+import { Font } from "astro:assets";
+
+const { title, description } = Astro.props;
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="robots" content="follow, index" />
+  <meta name="author" content="@angelcruz07" />
+  <meta name="description" content={description} />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <title>{title}</title>
+
+  <!-- <Font cssVariable="--font-raleway" preload /> -->
+</head>
